@@ -1,2 +1,6 @@
 # mysite
-does exactly what it says on the tin
+
+[] static page
+[] contact details
+[] portfolio projects
+
