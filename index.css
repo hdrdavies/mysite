@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+}
+
+.container-fluid h1 {
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+  font-size: 8em;
+}
