@@ -1,6 +1,3 @@
 # mysite
 
-[] static page
-[] contact details
-[] portfolio projects
-
+You found me!
