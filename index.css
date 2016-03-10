@@ -52,3 +52,16 @@ iframe {
   clear: both;
   padding-top: 2em;
 }
+
+
+/*LARGE MOBILE, TABLET */
+@media (min-width:480px) {
+
+
+}
+
+/* Change to three columns now and switch position of CTA */
+@media (min-width:1025px) {
+
+
+}
