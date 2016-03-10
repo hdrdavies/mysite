@@ -53,6 +53,10 @@ iframe {
   padding-top: 2em;
 }
 
+.sm-hide {
+  display: none;
+}
+
 
 /*LARGE MOBILE, TABLET */
 @media (min-width:480px) {
@@ -63,5 +67,11 @@ iframe {
 /* Change to three columns now and switch position of CTA */
 @media (min-width:1025px) {
 
+  .sm-hide {
+    display: block;
+  }
+  .lg-hide {
+    display: none;
+  }
 
 }
