@@ -6,11 +6,11 @@ body {
 h1, h2, h3, h4, p, ul {
   font-family: 'Ubuntu', sans-serif, Helvetica; /* google font */
   color: black;
-  font-size: 2.4vh;
+  font-size: 4vw;
 }
 
 h1 {
-  font-size: 6vh;
+    font-size: 9vw;
 }
 
 ul {
@@ -42,7 +42,7 @@ HEADING SECTION
   }
 
   .heading-title img {
-    max-height: 16vh;
+    max-height: 25vw;
     float: right;
   }
 
