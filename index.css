@@ -31,12 +31,19 @@ HEADING SECTION
   text-align: left;
 }
 
+  .heading-title {
+      display: inline-block;
+      padding-top: 2vh;
+  }
+
   .heading-title h1 {
     margin: 2vh 0 0 0;
+    float: left;
   }
 
   .heading-title img {
     max-height: 16vh;
+    float: right;
   }
 
 /*===============
@@ -56,7 +63,6 @@ PROJECT SECTION
 ===============*/
 
 .projects {
-  /*padding-top: 2em;*/
   text-align: center;
 }
 
@@ -78,7 +84,6 @@ PROJECT SECTION
       max-height: 250px;
     }
 
-/*LARGE MOBILE, TABLET */
 @media (min-width:480px) {
 
   .project img {
@@ -87,7 +92,6 @@ PROJECT SECTION
 
 }
 
-/* Change to three columns now and switch position of CTA */
 @media (min-width:1025px) {
 
   .col-1-3 {
