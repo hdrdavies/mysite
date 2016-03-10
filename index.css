@@ -1,28 +1,16 @@
 body {
   background-color: white;
+  margin: 0 10vw;
 }
 
 h1, h2, h3, h4, p, ul {
-  text-align: center;
   font-family: 'Ubuntu', sans-serif, Helvetica; /* google font */
   color: black;
-  font-size: 2em;
+  font-size: 4vw;
 }
 
-h2 {
-  font-size: 1.5em
-}
-
-h3 {
-  font-size: 1.2em;
-}
-
-h4 {
-  font-size: 1.1em;
-}
-
-p, ul, li {
-  font-size: 1em;
+h1 {
+    font-size: 9vw;
 }
 
 ul {
@@ -31,24 +19,128 @@ ul {
   margin:0;
   }
 
-.col-1-3 {
-  width: 33.33%;
-  float: left;
+.content {
+  padding: 0 1vw;
 }
+
+/*===============
+HEADING SECTION
+===============*/
 
 .heading {
-  padding: 0 15%;
+  text-align: left;
 }
 
-.projects {
-  padding-top: 2em;
-}
+  .heading-title {
+      display: inline-block;
+      padding-top: 2vh;
+  }
 
-iframe {
-  border: 2px solid #CCCCCC;
-}
+  .heading-title h1 {
+    margin: 2vh 0 0 0;
+    float: left;
+  }
+
+  .heading-title img {
+    max-height: 25vw;
+    float: right;
+  }
+
+/*===============
+CONTACT SECTION
+===============*/
 
 .contact {
   clear: both;
-  padding-top: 2em;
+}
+
+.sm-hide {
+  display: none;
+}
+
+/*===============
+PROJECT SECTION
+===============*/
+
+.projects {
+  text-align: center;
+}
+
+  .projects-title {
+    font-size: 4vh;
+  }
+
+  .projects h4 {
+    margin-top: 3vh;
+    margin-bottom: 0px;
+  }
+
+  .project.col-1-3 {
+    margin-bottom: 3vh;
+  }
+
+    .project img {
+      border: 2px solid #CCCCCC;
+      max-height: 250px;
+    }
+
+@media (min-width:480px) {
+
+
+  h1, h2, h3, h4, p, ul {
+    font-size: 1em;
+  }
+  h1 {
+      font-size: 4em;
+  }
+  .heading {
+    margin: 0 auto;
+    width: 53%; /* normally 50, but need text to fit */
+  }
+    h3.heading-tagline {
+      font-size: 2em;
+      margin-bottom: 0px;
+    }
+    .heading-title img {
+      max-height: 12vw;
+    }
+    .heading-content {
+      margin-top: 1em;
+    }
+      .heading-content p {
+        margin: 0.2em;
+      }
+  .projects {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 53%; /* keeping consistent with .heading */
+  }
+    .projects-title {
+      font-size: 2em;
+    }
+    .project.col-1-3 {
+      max-width: 14em;
+      margin-bottom: 0;
+    }
+      .project img {
+        max-height: 170px;
+      }
+  .contact.sm-hide p {
+    text-align: center;
+  }
+}
+
+@media (min-width:1025px) {
+
+  .col-1-3 {
+    width: 33.33%;
+    float: left;
+  }
+  .sm-hide {
+    display: block;
+  }
+  .lg-hide {
+    display: none;
+  }
+
 }
