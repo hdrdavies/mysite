@@ -34,6 +34,7 @@ HEADING SECTION
   .heading-title {
       display: inline-block;
       padding-top: 2vh;
+      position: relative;
   }
 
   .heading-title h1 {
@@ -95,14 +96,21 @@ PROJECT SECTION
   }
   .heading {
     margin: 0 auto;
-    width: 53%; /* normally 50, but need text to fit */
+    width: 470px;
   }
+    .heading-title h1 {
+      margin: 2vh 8rem 0 0;
+      float: left;
+    }
     h3.heading-tagline {
       font-size: 2em;
-      margin-bottom: 0px;
+      margin: 0 8rem 0 0;
     }
     .heading-title img {
-      max-height: 12vw;
+      width: 8rem;
+      position: absolute;
+      right: 0;
+      top: 2rem;
     }
     .heading-content {
       margin-top: 1em;
@@ -113,7 +121,7 @@ PROJECT SECTION
   .projects {
     overflow: hidden;
     margin: 0 auto;
-    width: 53%; /* keeping consistent with .heading */
+    width: 470px;
   }
     .projects-title {
       font-size: 2em;
