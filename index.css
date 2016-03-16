@@ -1,26 +1,23 @@
 body {
   background-color: white;
-  margin: 0 10vw;
+  margin: 0 auto;
+  width:  280px;
 }
 
 h1, h2, h3, h4, p, ul {
   font-family: 'Ubuntu', sans-serif, Helvetica; /* google font */
   color: black;
-  font-size: 4vw;
+  font-size: 0.8em;
 }
 
 h1 {
-    font-size: 9vw;
+  font-size: 2em;
 }
 
 ul {
   list-style-type: none;
-  padding:0;
-  margin:0;
-  }
-
-.content {
-  padding: 0 1vw;
+  padding: 0;
+  margin: 0;
 }
 
 /*===============
@@ -33,16 +30,17 @@ HEADING SECTION
 
   .heading-title {
       display: inline-block;
-      padding-top: 2vh;
+      padding-top: 0.8em;
+      position: relative;
   }
 
   .heading-title h1 {
-    margin: 2vh 0 0 0;
+    margin: 0.3em 0 0 0;
     float: left;
   }
 
   .heading-title img {
-    max-height: 25vw;
+    max-height: 5em;
     float: right;
   }
 
@@ -54,10 +52,6 @@ CONTACT SECTION
   clear: both;
 }
 
-.sm-hide {
-  display: none;
-}
-
 /*===============
 PROJECT SECTION
 ===============*/
@@ -67,16 +61,16 @@ PROJECT SECTION
 }
 
   .projects-title {
-    font-size: 4vh;
+    font-size: 1.4em;
   }
 
   .projects h4 {
-    margin-top: 3vh;
+    margin-top: 1.4em;
     margin-bottom: 0px;
   }
 
   .project.col-1-3 {
-    margin-bottom: 3vh;
+    margin-bottom: 1.4em;
   }
 
     .project img {
@@ -86,34 +80,41 @@ PROJECT SECTION
 
 @media (min-width:480px) {
 
+  body {
+    width: 480px;
+  }
 
   h1, h2, h3, h4, p, ul {
     font-size: 1em;
   }
   h1 {
-      font-size: 4em;
+    font-size: 3.3em;
+  }
+  .col-1-3 {
+    width: 33.33%;
+    float: left;
   }
   .heading {
     margin: 0 auto;
-    width: 53%; /* normally 50, but need text to fit */
   }
+    .heading-title h1 {
+      margin: 0.9rem 0 0 0;
+      float: left;
+    }
     h3.heading-tagline {
-      font-size: 2em;
-      margin-bottom: 0px;
+      font-size: 1.85em;
+      margin: 0 8rem 0 0;
     }
     .heading-title img {
-      max-height: 12vw;
+      max-height: 10em;
     }
     .heading-content {
       margin-top: 1em;
     }
-      .heading-content p {
-        margin: 0.2em;
-      }
   .projects {
     overflow: hidden;
     margin: 0 auto;
-    width: 53%; /* keeping consistent with .heading */
+    width: 470px;
   }
     .projects-title {
       font-size: 2em;
@@ -125,22 +126,7 @@ PROJECT SECTION
       .project img {
         max-height: 170px;
       }
-  .contact.sm-hide p {
-    text-align: center;
-  }
-}
-
-@media (min-width:1025px) {
-
-  .col-1-3 {
-    width: 33.33%;
-    float: left;
-  }
-  .sm-hide {
-    display: block;
-  }
-  .lg-hide {
+  .md-hide {
     display: none;
   }
-
 }
